@@ -3,6 +3,7 @@ const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('primaryNavigation');
 const navLinks = navMenu.querySelectorAll('a');
 const sections = document.querySelectorAll('section[id]');
+const topbar = document.querySelector('.topbar');
 const rootElement = document.documentElement;
 
 function setTheme(darkMode) {
@@ -26,6 +27,11 @@ function loadTheme() {
 function closeMobileMenu() {
     navMenu.classList.remove('open');
     menuToggle.setAttribute('aria-expanded', 'false');
+}
+
+function updateScrollOffset() {
+    const offset = topbar.offsetHeight + 16;
+    rootElement.style.setProperty('--nav-offset', `${offset}px`);
 }
 
 function scrollToSection(event) {
@@ -72,6 +78,7 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 720) {
         closeMobileMenu();
     }
+    updateScrollOffset();
 });
 
 window.addEventListener('scroll', () => {
@@ -110,3 +117,4 @@ revealElements.forEach((el) => revealObserver.observe(el));
 
 loadTheme();
 updateHeaderState();
+updateScrollOffset();
