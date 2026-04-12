@@ -67,6 +67,7 @@ button {
 
 .page-shell {
     max-width: 1180px;
+    width: min(1180px, calc(100% - 48px));
     margin: 0 auto;
     padding: 0 24px 48px;
 }
@@ -497,10 +498,26 @@ h3 {
 @media (max-width: 720px) {
     .page-shell {
         padding: 0 20px 36px;
+        width: calc(100% - 40px);
     }
 
     .topbar {
         padding: 14px 20px;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .theme-toggle {
+        order: 1;
+    }
+
+    .menu-toggle {
+        order: 2;
+        display: inline-flex;
     }
 
     .nav {
@@ -516,14 +533,6 @@ h3 {
 
     .nav.open {
         display: flex;
-    }
-
-    .menu-toggle {
-        display: inline-flex;
-    }
-
-    .topbar-actions {
-        margin-left: auto;
     }
 
     .section {
