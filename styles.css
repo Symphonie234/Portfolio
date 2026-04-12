@@ -518,6 +518,14 @@ h3 {
         min-width: 0;
     }
 
+    .brand-label {
+        font-size: 0.78rem;
+    }
+
+    .brand h1 {
+        font-size: 1rem;
+    }
+
     .topbar-actions {
         order: 2;
         margin-left: auto;
@@ -529,17 +537,20 @@ h3 {
     .theme-toggle,
     .menu-toggle {
         display: inline-flex;
+        padding: 10px 12px;
+        min-width: 44px;
+        min-height: 44px;
     }
 
     .nav {
         display: none;
         order: 3;
         flex-direction: column;
-        width: calc(100% - 40px);
+        width: calc(100% - 32px);
         max-width: 100%;
         background: var(--nav-panel-bg);
         margin: 16px auto 0;
-        padding: 18px;
+        padding: 16px;
         border-radius: 24px;
     }
 
@@ -547,7 +558,64 @@ h3 {
         display: flex;
     }
 
+    .nav-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-list li {
+        width: 100%;
+    }
+
+    .nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 14px;
+        border-radius: 18px;
+    }
+
     .section {
         padding: 54px 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .topbar {
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .page-shell {
+        padding: 0 14px 32px;
+    }
+
+    .brand h1 {
+        font-size: 0.95rem;
+    }
+
+    .topbar-actions {
+        gap: 8px;
+    }
+
+    .theme-toggle,
+    .menu-toggle {
+        padding: 10px;
+        min-width: 42px;
+        min-height: 42px;
+    }
+
+    .nav {
+        width: calc(100% - 28px);
+        padding: 14px;
+        border-radius: 20px;
+    }
+
+    .nav-list {
+        gap: 10px;
+    }
+
+    .nav a {
+        padding: 10px 12px;
+        font-size: 0.95rem;
     }
 }
