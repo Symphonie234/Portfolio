@@ -15,6 +15,9 @@
     --border: rgba(59, 130, 246, 0.18);
     --shadow: 0 24px 80px rgba(16, 33, 63, 0.08);
     --nav-offset: 96px;
+    --nav-bg: rgba(255, 255, 255, 0.94);
+    --nav-bg-scrolled: rgba(255, 255, 255, 0.98);
+    --nav-panel-bg: rgba(255, 255, 255, 0.95);
 }
 
 :root.dark {
@@ -28,6 +31,9 @@
     --accent-soft: rgba(96, 165, 250, 0.16);
     --border: rgba(148, 163, 184, 0.16);
     --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    --nav-bg: rgba(7, 16, 31, 0.92);
+    --nav-bg-scrolled: rgba(7, 16, 31, 0.98);
+    --nav-panel-bg: rgba(7, 16, 31, 0.95);
 }
 
 * {
@@ -76,26 +82,16 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 18px 24px;
+    padding: 18px clamp(20px, 5vw, 6%);
     backdrop-filter: blur(22px);
-    background: rgba(255, 255, 255, 0.94);
+    background: var(--nav-bg);
     border-bottom: 1px solid rgba(16, 38, 80, 0.08);
     transition: background 200ms ease, border-color 200ms ease, transform 180ms ease;
 }
 
-:root.dark .topbar {
-    background: rgba(7, 16, 31, 0.92);
-    border-bottom-color: rgba(255, 255, 255, 0.08);
-}
-
 .topbar.scrolled {
-    background: rgba(255, 255, 255, 0.98);
+    background: var(--nav-bg-scrolled);
     box-shadow: 0 18px 40px rgba(16, 33, 63, 0.08);
-}
-
-:root.dark .topbar.scrolled {
-    background: rgba(7, 16, 31, 0.98);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
 }
 
 .brand {
@@ -511,7 +507,7 @@ h3 {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: rgba(7, 16, 31, 0.95);
+        background: var(--nav-panel-bg);
         margin-top: 16px;
         padding: 18px;
         border-radius: 24px;
