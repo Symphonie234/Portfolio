@@ -67,16 +67,19 @@ button {
 .topbar {
     position: sticky;
     top: 0;
-    z-index: 20;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding: 20px 0;
-    backdrop-filter: blur(18px);
-    background: rgba(255, 255, 255, 0.88);
+    padding: 18px 24px;
+    backdrop-filter: blur(22px);
+    background: rgba(255, 255, 255, 0.94);
     border-bottom: 1px solid rgba(16, 38, 80, 0.08);
-    transition: background 200ms ease, border-color 200ms ease;
+    transition: background 200ms ease, border-color 200ms ease, transform 180ms ease;
 }
 
 :root.dark .topbar {
@@ -340,19 +343,31 @@ h3 {
     padding: 28px;
     box-shadow: var(--shadow);
     display: grid;
-    gap: 18px;
+    gap: 16px;
 }
 
-.project-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
+.project-copy {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.project-stack {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.project-stack li {
+    padding: 10px 14px;
     border-radius: 999px;
-    background: var(--accent-soft);
-    color: var(--accent);
+    background: var(--surface-strong);
+    color: var(--text);
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .project-link {

@@ -7,36 +7,36 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <header class="topbar">
+        <div class="brand">
+            <p class="brand-label">Portfolio</p>
+            <h1>Gerand C. Parawan</h1>
+        </div>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-expanded="false"
+            aria-controls="primaryNavigation"
+            aria-label="Toggle navigation menu"
+        >
+            ☰
+        </button>
+
+        <nav class="nav" id="primaryNavigation" aria-label="Primary navigation">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
     <div class="page-shell" id="pageShell">
-        <header class="topbar">
-            <div class="brand">
-                <p class="brand-label">Portfolio</p>
-                <h1>Gerand C. Parawan</h1>
-            </div>
-
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-expanded="false"
-                aria-controls="primaryNavigation"
-                aria-label="Toggle navigation menu"
-            >
-                ☰
-            </button>
-
-            <nav class="nav" id="primaryNavigation" aria-label="Primary navigation">
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-        </header>
-
         <main>
             <section class="hero section" id="home">
                 <div class="hero-copy reveal">
@@ -105,22 +105,64 @@
                 </div>
                 <div class="project-grid">
                     <article class="project-card reveal">
-                        <div class="project-badge">Web App</div>
-                        <h3>Creative Studio</h3>
-                        <p>A modern landing page concept with polished branding, responsive layout, and smooth transitions.</p>
-                        <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
+                        <h3>Glico</h3>
+                        <p class="project-copy">A dynamic interface built with modern templating, frontend polish, and responsive interaction.</p>
+                        <ul class="project-stack">
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                            <li>Blade</li>
+                            <li>Vue</li>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                        </ul>
                     </article>
                     <article class="project-card reveal">
-                        <div class="project-badge">Portfolio</div>
-                        <h3>Personal Showcase</h3>
-                        <p>A responsive portfolio layout designed to present projects, skills, and contact details clearly.</p>
-                        <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
+                        <h3>Warple</h3>
+                        <p class="project-copy">A modern content platform blending typed frontend experiences with flexible CMS-driven rendering.</p>
+                        <ul class="project-stack">
+                            <li>TypeScript</li>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>Blade</li>
+                            <li>MDX</li>
+                        </ul>
                     </article>
                     <article class="project-card reveal">
-                        <div class="project-badge">Interactive</div>
-                        <h3>Experience Flow</h3>
-                        <p>Interactive elements and subtle motion to enhance engagement without sacrificing speed.</p>
-                        <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
+                        <h3>Darwin</h3>
+                        <p class="project-copy">A clean backend-driven application framework using templated PHP views for efficient content delivery.</p>
+                        <ul class="project-stack">
+                            <li>PHP</li>
+                            <li>Blade</li>
+                        </ul>
+                    </article>
+                    <article class="project-card reveal">
+                        <h3>TastyPlates</h3>
+                        <p class="project-copy">A hybrid web experience combining modern React-driven pages with WordPress content management.</p>
+                        <ul class="project-stack">
+                            <li>Next.js</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </article>
+                    <article class="project-card reveal">
+                        <h3>TimeTracker</h3>
+                        <p class="project-copy">A productivity tool built for time management and reporting in a Laravel-powered workflow.</p>
+                        <ul class="project-stack">
+                            <li>Laravel (PHP)</li>
+                        </ul>
+                    </article>
+                    <article class="project-card reveal">
+                        <h3>D2 Allocation</h3>
+                        <p class="project-copy">A deployment-ready allocation dashboard backed by PHP, templating, and infrastructure automation.</p>
+                        <ul class="project-stack">
+                            <li>PHP</li>
+                            <li>Blade</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Makefile</li>
+                            <li>Dockerfile</li>
+                        </ul>
                     </article>
                 </div>
             </section>
