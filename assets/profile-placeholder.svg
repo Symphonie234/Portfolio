@@ -1,0 +1,17 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title>Profile placeholder</title>
+  <desc>Abstract portrait placeholder for portfolio profile section</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" rx="80" fill="#111827" />
+  <circle cx="600" cy="460" r="180" fill="url(#grad)" opacity="0.92" />
+  <circle cx="520" cy="420" r="32" fill="#f8fafc" opacity="0.95" />
+  <circle cx="680" cy="420" r="32" fill="#f8fafc" opacity="0.95" />
+  <path d="M440 620c40 60 140 120 220 120s180-60 220-120" stroke="#f8fafc" stroke-width="42" fill="none" stroke-linecap="round" opacity="0.92" />
+  <circle cx="300" cy="840" r="120" fill="#1e293b" opacity="0.9" />
+  <circle cx="900" cy="820" r="100" fill="#2563eb" opacity="0.9" />
+</svg>
