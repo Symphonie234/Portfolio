@@ -151,6 +151,12 @@ button {
     transform: translateY(-1px);
 }
 
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .nav a.active {
     color: var(--accent);
 }
@@ -504,24 +510,22 @@ h3 {
     .topbar {
         padding: 14px 20px;
         flex-wrap: wrap;
+        align-items: center;
     }
 
     .brand {
-        width: 100%;
-        margin-bottom: 10px;
+        flex: 1;
+        min-width: 0;
     }
 
-    .theme-toggle {
-        order: 1;
-    }
-
-    .menu-toggle {
+    .topbar-actions {
         order: 2;
-        display: inline-flex;
+        margin-left: auto;
     }
 
     .nav {
         display: none;
+        order: 3;
         flex-direction: column;
         width: calc(100% - 40px);
         max-width: 100%;
