@@ -45,7 +45,13 @@ function scrollToSection(event) {
     const targetSection = document.querySelector(targetId);
 
     if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const offset = topbar.offsetHeight + 16;
+        const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth',
+        });
     }
 }
 
