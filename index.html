@@ -1,135 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Symphonie Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerand C. Parawan | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell" id="pageShell">
-    <header class="topbar">
-      <div class="brand">Symphonie</div>
-      <nav class="nav" id="navMenu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="topbar-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">☰</button>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero section" id="home">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Hello, I’m</p>
-          <h1>Symphonie</h1>
-          <p class="hero-text">
-            I build modern, responsive web experiences with clean design and thoughtful interactions.
-          </p>
-          <div class="hero-buttons">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Get in Touch</a>
-          </div>
-        </div>
-        <div class="hero-image reveal">
-          <img src="assets/profile-placeholder.svg" alt="Profile placeholder" />
-        </div>
-      </section>
-
-      <section class="section about" id="about">
-        <div class="section-intro reveal">
-          <p class="section-tag">About Me</p>
-          <h2>Who I Am</h2>
-        </div>
-        <div class="about-grid reveal">
-          <div>
-            <p>
-              I'm a web creator passionate about crafting polished digital experiences. I combine design, animation, and responsive layout to build websites that feel modern and intuitive.
-            </p>
-            <p>
-              My workflow includes semantic HTML, clean CSS, and lightweight JavaScript for accessible interactions. I enjoy turning ideas into websites that are fast, beautiful, and easy to use.
-            </p>
-          </div>
-          <div class="about-stats">
-            <div>
-              <strong>5+</strong>
-              <span>Projects completed</span>
+    <div class="page-shell" id="pageShell">
+        <header class="topbar">
+            <div class="brand">
+                <p class="brand-label">Portfolio</p>
+                <h1>Gerand C. Parawan</h1>
             </div>
-            <div>
-              <strong>Responsive</strong>
-              <span>Mobile-first layouts</span>
-            </div>
-            <div>
-              <strong>Dark Mode</strong>
-              <span>Smooth theme switching</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="section projects" id="projects">
-        <div class="section-intro reveal">
-          <p class="section-tag">Projects</p>
-          <h2>Selected Work</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <div class="project-badge">Web App</div>
-            <h3>Creative Studio</h3>
-            <p>A modern landing page concept featuring visual hierarchy, smooth transitions, and a polished brand experience.</p>
-            <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-badge">Portfolio</div>
-            <h3>Personal Showcase</h3>
-            <p>A responsive personal portfolio layout built to highlight projects, skills, and contact details in a clean structure.</p>
-            <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-badge">Interactive</div>
-            <h3>Experience Flow</h3>
-            <p>Small interactive elements and smooth animations to enhance engagement while preserving performance.</p>
-            <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
-          </article>
-        </div>
-      </section>
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-expanded="false"
+                aria-controls="primaryNavigation"
+                aria-label="Toggle navigation menu"
+            >
+                ☰
+            </button>
 
-      <section class="section skills" id="skills">
-        <div class="section-intro reveal">
-          <p class="section-tag">Skills</p>
-          <h2>Tools & Technologies</h2>
-        </div>
-        <div class="skills-grid reveal">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Responsive Design</span>
-          <span>Version Control</span>
-          <span>UI Animation</span>
-        </div>
-      </section>
+            <nav class="nav" id="primaryNavigation" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-      <section class="section contact" id="contact">
-        <div class="section-intro reveal">
-          <p class="section-tag">Contact</p>
-          <h2>Let’s connect</h2>
-        </div>
-        <div class="contact-card reveal">
-          <p>If you’d like to collaborate, share feedback, or explore a project together, send a message below.</p>
-          <a class="button primary" href="mailto:hello@example.com">Send an Email</a>
-        </div>
-      </section>
-    </main>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        </header>
 
-    <footer class="footer">
-      <p>Built by Symphonie | Inspired by your GitHub portfolio</p>
-    </footer>
-  </div>
-  <script src="script.js"></script>
+        <main>
+            <section class="hero section" id="home">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Hello, I’m</p>
+                    <h2>Gerand C. Parawan</h2>
+                    <p class="hero-subtitle">Graduate of Cebu Technological University – Danao Campus</p>
+                    <p class="hero-text">
+                        I create polished web applications and digital experiences using modern frontend and backend technologies. My work blends clean design, performance, and accessibility.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="button primary" href="#projects">View Projects</a>
+                        <a class="button secondary" href="#contact">Contact Me</a>
+                    </div>
+                </div>
+
+                <figure class="hero-image reveal">
+                    <img
+                        src="assets/images/profile.png"
+                        alt="Portrait of Gerand C. Parawan"
+                        loading="lazy"
+                    />
+                </figure>
+            </section>
+
+            <section class="section about" id="about">
+                <div class="section-intro reveal">
+                    <p class="section-tag">About Me</p>
+                    <h2>Driven Web & Application Developer</h2>
+                </div>
+
+                <div class="about-grid reveal">
+                    <article class="about-copy">
+                        <p>
+                            I am Gerand C. Parawan, a graduate of Cebu Technological University – Danao Campus. I specialize in building professional, responsive web applications using a balanced mix of frontend, backend, and content management tools.
+                        </p>
+                        <p>
+                            I enjoy creating user-friendly digital experiences with clean code, fast performance, and thoughtful accessibility across devices.
+                        </p>
+                    </article>
+
+                    <aside class="about-details">
+                        <div class="detail-item">
+                            <span>Education</span>
+                            <strong>Cebu Technological University – Danao Campus</strong>
+                        </div>
+                        <div class="detail-item">
+                            <span>Role</span>
+                            <strong>Web Developer</strong>
+                        </div>
+                        <div class="detail-item">
+                            <span>Focus</span>
+                            <strong>Frontend + Backend + CMS</strong>
+                        </div>
+                        <div class="detail-item">
+                            <span>Location</span>
+                            <strong>Cebu, Philippines</strong>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section projects" id="projects">
+                <div class="section-intro reveal">
+                    <p class="section-tag">Projects</p>
+                    <h2>Selected Work</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-badge">Web App</div>
+                        <h3>Creative Studio</h3>
+                        <p>A modern landing page concept with polished branding, responsive layout, and smooth transitions.</p>
+                        <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-badge">Portfolio</div>
+                        <h3>Personal Showcase</h3>
+                        <p>A responsive portfolio layout designed to present projects, skills, and contact details clearly.</p>
+                        <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-badge">Interactive</div>
+                        <h3>Experience Flow</h3>
+                        <p>Interactive elements and subtle motion to enhance engagement without sacrificing speed.</p>
+                        <a href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer" class="project-link">View repo</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section skills" id="skills">
+                <div class="section-intro reveal">
+                    <p class="section-tag">Skills</p>
+                    <h2>Technical Proficiency</h2>
+                </div>
+
+                <div class="skills-grid reveal">
+                    <article class="skill-card">
+                        <h3>Backend & Databases</h3>
+                        <ul class="skill-list">
+                            <li>Laravel (PHP)</li>
+                            <li>MySQL</li>
+                            <li>Salesforce Apex</li>
+                            <li>SOQL</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Next.js</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>CMS & Tools</h3>
+                        <ul class="skill-list">
+                            <li>WordPress</li>
+                            <li>Nulab (Backlog)</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section contact" id="contact">
+                <div class="section-intro reveal">
+                    <p class="section-tag">Contact</p>
+                    <h2>Let's connect</h2>
+                </div>
+                <article class="contact-card reveal">
+                    <p>If you’d like to collaborate, discuss a project, or learn more about my work, reach out anytime.</p>
+                    <div class="contact-actions">
+                        <a class="button primary" href="mailto:hello@example.com">Send an Email</a>
+                        <a class="button secondary" href="https://github.com/Symphonie234/Portfolio" target="_blank" rel="noreferrer">GitHub Profile</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Built by Gerand C. Parawan – Cebu Technological University graduate</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

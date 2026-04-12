@@ -1,14 +1,14 @@
 # Portfolio Website
 
-A modern, responsive personal portfolio website built with HTML5, CSS3, and JavaScript.
+A modern, responsive personal portfolio website for Gerand C. Parawan, built with HTML5, CSS3, and JavaScript.
 
 ## Features
 
 - Responsive layout with mobile-friendly navigation
 - Light and dark theme toggle
 - Smooth scrolling and reveal animations
-- Project showcase and skills section
-- Clean structure with separated HTML, CSS, and JavaScript
+- Project showcase and grouped skills section
+- Accessible semantic structure with modern CSS
 
 ## Files
 
