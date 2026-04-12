@@ -504,7 +504,7 @@ h3 {
 @media (max-width: 720px) {
     .page-shell {
         padding: 0 20px 36px;
-        width: calc(100% - 40px);
+        width: 100%;
     }
 
     .topbar {
@@ -521,6 +521,14 @@ h3 {
     .topbar-actions {
         order: 2;
         margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .theme-toggle,
+    .menu-toggle {
+        display: inline-flex;
     }
 
     .nav {
