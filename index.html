@@ -18,6 +18,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#game">Play</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -173,6 +174,34 @@
                         </ul>
                     </article>
                 </div>
+            </section>
+
+            <section class="section game" id="game">
+                <div class="section-intro reveal">
+                    <p class="section-tag">Mini Game</p>
+                    <h2>Reaction Challenge</h2>
+                </div>
+                <article class="game-card reveal">
+                    <div class="game-header">
+                        <p class="game-copy">Test your reaction speed by tapping the target as soon as it appears. Score as many hits as you can before time runs out.</p>
+                        <div class="game-status">
+                            <span class="game-score">Score: <strong id="gameScore">0</strong></span>
+                            <span class="game-timer">Time: <strong id="gameTimer">15</strong>s</span>
+                        </div>
+                    </div>
+
+                    <div class="game-controls">
+                        <button class="button primary" id="gameStart" type="button">Start Game</button>
+                        <button class="button secondary" id="gameReset" type="button">Reset</button>
+                    </div>
+
+                    <div class="game-area" id="gameArea">
+                        <p class="game-instructions">Press start to begin. The target will appear in the box below.</p>
+                        <button id="targetButton" class="game-target hidden" type="button" aria-label="Reaction target">Tap</button>
+                    </div>
+
+                    <p class="game-feedback" id="gameFeedback">Ready when you are. Keep the score high and stay focused.</p>
+                </article>
             </section>
 
             <section class="section skills" id="skills">
