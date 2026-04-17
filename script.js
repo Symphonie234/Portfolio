@@ -45,8 +45,22 @@ function scrollToSection(event) {
     const targetSection = document.querySelector(targetId);
 
     if (targetSection) {
-        const offset = topbar.offsetHeight + 16;
-        const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
+        const headerHeight = topbar.offsetHeight;
+        const sectionRect = targetSection.getBoundingClientRect();
+        const sectionHeight = sectionRect.height;
+        const viewportHeight = window.innerHeight;
+        const sectionTop = targetSection.offsetTop;
+        const availableSpace = viewportHeight - headerHeight;
+
+        let targetPosition;
+        if (sectionHeight < availableSpace) {
+            const centerOffset = (availableSpace - sectionHeight) / 2;
+            targetPosition = sectionTop - headerHeight - centerOffset;
+        } else {
+            targetPosition = sectionTop - headerHeight - 16;
+        }
+
+        targetPosition = Math.max(0, targetPosition);
 
         window.scrollTo({
             top: targetPosition,
